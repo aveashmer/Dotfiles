@@ -17,7 +17,7 @@ eval "$(starship init zsh)"
 # 2. Подсветка синтаксиса
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Отключение подчеркивания путей (опционально, со скриншота)
+# Отключение подчеркивания путей
 (( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none
