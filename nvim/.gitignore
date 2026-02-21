@@ -1,0 +1,30 @@
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+
+# --- Секреты (Самое важное!) ---
+secrets.lua
+.env
+*.env
+
+# --- Системный мусор Мака ---
+.DS_Store
+
+# --- Кэш Neovim (Чтобы Гит не тормозил) ---
+.netrwhist
+undo/
+shada/
+/plugin/
+
+# --- LazyVim специфичное ---
+# Скрываем лок-файл, чтобы всегда ставилось свежее
+lazy-lock.json
+
+# --- Базы данных (Твой Dadbod) ---
+*.db
+*.sqlite
