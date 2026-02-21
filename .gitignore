@@ -1,0 +1,20 @@
+# --- Системный мусор macOS ---
+.DS_Store
+**/.DS_Store
+
+# --- Секреты и локальные конфиги ---
+.env
+*.env
+secrets.lua
+*_secret.*
+
+# --- Базы данных и кэш ---
+*.db
+*.sqlite
+*.log
+__pycache__/
+
+# --- Специфично для Neovim ---
+.netrwhist
+undo/
+shada/
