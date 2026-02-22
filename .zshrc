@@ -27,3 +27,10 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # 4. Активация fzf
 source <(fzf --zsh)
+
+
+# Удаление через Option + Backspace для Mac (Zsh format)
+export FZF_CTRL_R_OPTS="
+  --bind 'alt-backspace:execute(sed -i \"\" \"/{}/d\" \$HISTFILE)+reload(strings \$HISTFILE | sed \"s/^[[:space:]]*//\")'
+  --header 'Option + Backspace — удалить команду из истории'
+"

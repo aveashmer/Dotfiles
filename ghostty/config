@@ -21,3 +21,5 @@ keybind = cmd+d=new_split:right
 keybind = cmd+shift+d=new_split:down
 keybind = ctrl+tab=next_tab
 keybind = ctrl+shift+tab=previous_tab
+
+macos-option-as-alt = true
